@@ -1,0 +1,98 @@
+
+.header{
+    width: 100%;
+    padding: 0.5rem;
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family:  Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 2px 0 black;
+
+}
+.header .logo{
+
+}
+
+.header .a{
+    color: black;
+    outline: none;
+    text-decoration: none;
+    margin: 2px;
+    padding: .5rem;
+}
+
+.header .a:visited{
+    color: black;
+    outline: none;
+    text-decoration: none;
+
+}
+
+.header .a:hover{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.header .button{
+    display: none;
+    border: none;
+}
+
+.header .svg{
+    width: 2em;
+    height: 2em;
+    fill: black;
+}
+
+.header .nav{
+}
+
+.header .ul{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .li{
+margin:0.5em;
+list-style-type: none;
+}
+
+@media screen and (max-width:600px){
+
+
+.header .button{
+        display: block;
+        cursor: pointer;
+}
+
+.header .nav{
+        width: 100%;
+        display: flex;
+        flex-flow:column nowrap;
+        height: 0;
+        transition: all .5s ease;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        pointer-events: none;
+}
+
+.header .nav.active{
+    display:block;
+    height: 30vh;
+    pointer-events: auto;
+}
+
+.header .ul{
+    flex-direction: column;
+}
+
+.header .li{
+    margin: 1em 0;
+}
+}
