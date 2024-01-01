@@ -1,24 +1,26 @@
-
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Urbanist:wght@400;500;600&display=swap');
 .header{
     width: 100%;
     padding: 0.5rem;
-    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: radial-gradient(circle, rgba(253,29,29,1) 19%, rgba(131,58,180,1) 50%, rgba(252,176,69,1) 100%);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    color: black;
-    font-family:  Helvetica, Arial, sans-serif;
+
+    font-family:  "Urbanist", Helvetica, Arial, sans-serif;
     text-decoration: none;
     box-shadow: 0 2px 0 black;
 
 }
-.header .logo{
+.header .a .logo{
+  
 
 }
 
 .header .a{
-    color: black;
+    font-weight: 500;
     outline: none;
     text-decoration: none;
     margin: 2px;
@@ -26,14 +28,15 @@
 }
 
 .header .a:visited{
-    color: black;
+
     outline: none;
     text-decoration: none;
 
 }
 
 .header .a:hover{
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 15px rgb(249, 209, 7);
+        font-weight: 600;
 }
 
 .header .button{
@@ -95,4 +98,4 @@ list-style-type: none;
 .header .li{
     margin: 1em 0;
 }
-}
+} */

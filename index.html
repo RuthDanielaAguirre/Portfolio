@@ -5,36 +5,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <title> RAD-DEV PORTFOLIO</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
+
+    <nav class="nav container">
+      <a href="#" class="nav_logo">Ruth Daniela Aguirre</a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+
+          <li class="nav_item">
+            <a href="#home" class="nav_link">
+              <i class="uil uil-estate nav_icon"></i>HOME
+            </a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#about" class="nav_link">
+              <i class="uil uil-user nav_icon"></i>ABOUT
+            </a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-file-alt nav_icon"></i>SKILLS
+            </a>
+
+          </li>
+          <li class="nav_item">
+            <a href="#services" class="nav_link">
+              <i class="uil uil-briefcase-alt nav_icon"></i>SERVICES
+            </a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#portfolio" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i>PORTFOLIO
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">
+              <i class="uil uil-message nav_icon"></i>CONTACT ME
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times-circle nav_close" id="nav-close"></i>
+      </div>
+      <div class="nav_btns">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
 
 
-    <button class="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+    <!-- <button class="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="svg"
         viewBox="0 0 16 16">
         <path fill-rule="evenodd"
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
       </svg>
     </button>
 
-    <nav class="nav">
+    <nav class="nav container">
+      <a href="#" class="a nav logo">Ruth Daniela Aguirre</a>
       <ul class="ul">
         <li class="li"><a href="#" class="a">HOME</a></li>
         <li class="li"><a href="#" class="a">ABOUT ME</a></li>
         <li class="li"><a href="#" class="a">PROJECTS</a></li>
         <li class="li"><a href="#" class="a">CONTACT</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </header>
-  <main class="main">
-<section class="section1">
-  <h1 class="h1">HI</h1>
-</section>
 
-  <section class="section2">
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <div class="home_content grid">
+          <div class="home_social">
+
+            <a href="https://github.com/RuthDanielaAguirre" target="_blank" class="home_social-icon">
+              <i class="uil uil-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ruth-daniela-aguirre/" target="_blank" class="home_social-icon">
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <div class="home_img">
+              <svg class="home_blob" width="200" height="187" viewBox="0 0 1544 1645" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M543.273 1519.59C255.809 1519.59 244.273 2057.59 22.7735 898.09C-198.727 -261.411 1309 -113 801.273 320.59C293.547 754.18 2078.27 628.59 1377.77 866.09C677.274 1103.59 764.813 2109.15 620.773 1198.59C478.897 1272.94 664.872 1519.59 543.273 1519.59Z"
+                  fill="url(#paint0_linear_55_61)" />
+                <defs>
+                  <linearGradient id="paint0_linear_55_61" x1="771.721" y1="0.761719" x2="771.721" y2="1644.23"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FDD91D" />
+                    <stop offset="1" stop-color="#FD1D1D" />
+                  </linearGradient>
+                </defs>
+                <image class="home_blob-img" x="12" y="30" href="assets/img/yo.svg"></image>
+              </svg>
+            </div>
+            <div class="home_data">
+              <h1 class="home_title">Hi, I am Ruth Daniela Aguirre </h1>
+              <h3 class="home_subtitle">Full Stack Developer</h3>
+              <a href="#contact" class="button button--flex">
+              CONTACT ME <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="home_scroll">
+          <a href="#about" class="home_scroll-button button--flex"></a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- <section class="section2">
     <h2 class="h2">ABOUT ME</h2>
     <p>¡Hola! Soy Ruth Daniela Aguirre, una mujer que ha danzado entre las páginas de la literatura y las líneas de
       código. Mi historia se teje con hilos de arte, danza, literatura inglesa y la emocionante travesía hacia el
@@ -64,29 +159,16 @@
       ¡Bienvenido/a a mi mundo, donde las historias danzan en la pantalla y las líneas de código narran
       experiencias únicas!
     </p>
-  </section>
+  </section> -->
 
-  <section class="section3">
-    <h2 class="h2">PROJECTS</h2>
-  </section>
 
-  <section class="section4">
-    <h2 class="h2">CONTACT ME</h2>
-    <form action="">
-      <input type="text" value="name">
-      <input type="email" value="email" name="" id="">
-      <input type="text" value="project" name="" id="">
-      <input type="button" value="send">
-    </form>
-  </section>
-</main>
 </body>
-  <div class="rrss">
-    <img src="icons-images/Facebook.png" alt="Facebook">
-    <img src="icons-images/twitter_360.png" alt="Twitter" id="twitter1">
-    <img src="icons-images/Instagram.png" alt="Instagram">
-  </div>
-  <script src="node_modules/animejs/lib/anime.min.js"></script>
-  <script src="assets/script.js"></script>
+<div class="rrss">
+  <img src="icons-images/Facebook.png" alt="Facebook">
+  <img src="icons-images/twitter_360.png" alt="Twitter" id="twitter1">
+  <img src="icons-images/Instagram.png" alt="Instagram">
+</div>
+<script src="node_modules/animejs/lib/anime.min.js"></script>
+<script src="assets/js/script.js"></script>
 
 </html>
