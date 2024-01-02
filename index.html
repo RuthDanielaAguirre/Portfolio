@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <title> RAD-DEV PORTFOLIO</title>
 </head>
 
@@ -295,39 +296,42 @@
     </div>
   </section>
 
-  <section class="projects" id="projects">
+  <section class="projects section" id="projects">
     <h2 class="section_title">PROJECTS</h2>
-    <div class="projects_container container">
-      <div>
-        <div class="projects_content grid">
+
+    <div class="projects_container container swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="projects_content swiper-slider">
           <img src="assets/img/lings-cars.svg" alt="car renting image" class="projects_img">
           <a href="#" class="button button--flex button--small project_button">
-          <i class="uil uil-arrow-circle-right button_icon"></i>
-        </a>
+            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i>
+          </a>
         </div>
-      </div>
 
-      <div class="projects_content grid">
-        <img src="assets/img/widerWorld.svg" alt="car renting image" class="projects_img">
-        <a href="#" class="button button--flex button--small project_button">
-        <i class="uil uil-arrow-circle-right button_icon"></i>
-      </a>
-      </div>
+        <div class="projects_content swiper-slider">
+          <img src="assets/img/widerWorld.svg" alt="car renting image" class="projects_img">
+          <a href="#" class="button button--flex button--small project_button">
+            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i>
+          </a>
+        </div>
 
-    <div class="projects_content grid">
-      <img src="assets/img/TQD-SE.svg" alt="car renting image" class="projects_img">
-      <a href="#" class="button button--flex button--small project_button">
-      <i class="uil uil-arrow-circle-right button_icon"></i>
-    </a>
+        <div class="projects_content swiper-slider">
+          <img src="assets/img/TQD-SE.svg" alt="car renting image" class="projects_img">
+          <a href="#" class="button button--flex button--small project_button">
+            REVIEW <i class="uil uil-arrow-circle-right button_icon"></i>
+          </a>
+        </div>
+
+      </div>
     </div>
 
-    </div>
   </section>
 
 </body>
 
 <script src="node_modules/animejs/lib/anime.min.js"></script>
-
+<script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
 
 </html>

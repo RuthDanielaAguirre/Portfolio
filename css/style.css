@@ -374,3 +374,31 @@ background-color: var(--first-color-alt);
     height: max-content;
     margin-bottom: var(--mb-2-5);
 }
+
+/*************projects***************/
+.projects_container,
+.swiper-wrapper{
+    overflow: initial;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    row-gap: 4rem;
+}
+
+.projects_content{
+    padding:0 1.5rem;
+}
+
+.projects_img{
+    width: 16.5rem;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.project_button{
+    display: flex;
+align-self: center;
+justify-self:center;
+}
+
+

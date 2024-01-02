@@ -42,6 +42,21 @@ const skillsContent = document.getElementsByClassName('skills_content'),
         }
     }
 
+    /********swiper************ */
+
+    let swiper = new Swiper(".projects_container", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+
 // button.addEventListener('click', ()=>{
 //     nav.classList.toggle('active')
 // });
