@@ -248,6 +248,12 @@ img {
     color: var(--first-color);
 }
 
+.icon_1{
+    font-size: 1.5rem;
+    margin-right:var(--mb-0-25);
+
+}
+
 .icon:hover{
     color: var(--first-color-alt)
 }
@@ -339,4 +345,32 @@ background-color: var(--first-color-alt);
 .about_buttons{
     display: flex;
     justify-content: center;
+}
+
+/*******skills***********/
+.skills_container{
+    row-gap: 0;
+}
+
+.skills_header{
+    display:flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills_arrow{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills_title{
+    font-size: var(--h3-font-size);
+    justify-content: space-between;
+}
+
+.skills_list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
 }
