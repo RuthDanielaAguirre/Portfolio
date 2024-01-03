@@ -376,21 +376,23 @@ background-color: var(--first-color-alt);
 }
 
 /*************projects***************/
-.projects_container,
+.swiper-container{
+    overflow: hidden;
+}
 .swiper-wrapper{
-    overflow: initial;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    row-gap: 4rem;
+    transition:all .9s ease-in;
 }
 
 .projects_content{
-    padding:0 1.5rem;
+    padding:.25rem;
 }
 
 .projects_img{
-    width: 16.5rem;
+    width: 25rem;
     border-radius: .5rem;
     justify-self: center;
 }

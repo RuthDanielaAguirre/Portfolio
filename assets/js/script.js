@@ -43,20 +43,38 @@ const skillsContent = document.getElementsByClassName('skills_content'),
     }
 
     /********swiper************ */
+    let sliderInner=document.querySelector('.swiper-wrapper');
+    let images = sliderInner.querySelectorAll('img');
+    let index = 0;
 
-    let swiper = new Swiper(".projects_container", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
+    setInterval(function(){
+        let percentage = index * -34;
+        sliderInner.style.transform="translateX("+ percentage +"%)";
+        if(index > (images.length +1 )){
+            index = -1;
+        }
+        index++;
+    },3000);
 
+
+    
+
+    //noestoysegura 
+    //let swiper = new Swiper(".projects_container", {
+    //     cssMode: true,
+    //     navigation: {
+    //       nextEl: ".swiper-button-next",
+    //       prevEl: ".swiper-button-prev",
+    //     },
+    //     pagination: {
+    //       el: ".swiper-pagination",
+    //     },
+    //     mousewheel: true,
+    //     keyboard: true,
+    //   });
+
+
+    /**********esto fue barra de navegacion */
 // button.addEventListener('click', ()=>{
 //     nav.classList.toggle('active')
 // });
