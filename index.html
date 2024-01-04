@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <title> RAD-DEV PORTFOLIO</title>
 </head>
 
@@ -118,8 +117,9 @@
       <h2 class="section_title">ABOUT ME</h2>
 
 
-      <div class="about_container grid">
-        <svg class="home_blob" width="200" height="187" viewBox="0 0 1544 1645" fill="none"
+      <div class="about_container container grid">
+        <img src="assets/img/Group 5.svg" class="about-img" alt="foto dev">
+        <!-- <svg class="home_blob" width="200" height="187" viewBox="0 0 1544 1645" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M543.273 1519.59C255.809 1519.59 244.273 2057.59 22.7735 898.09C-198.727 -261.411 1309 -113 801.273 320.59C293.547 754.18 2078.27 628.59 1377.77 866.09C677.274 1103.59 764.813 2109.15 620.773 1198.59C478.897 1272.94 664.872 1519.59 543.273 1519.59Z"
@@ -130,12 +130,12 @@
               <stop stop-color="#FDD91D" />
               <stop offset="1" stop-color="#FD1D1D" />
             </linearGradient>
-          </defs>
-          <image class="home_blob-img about-img" x="12" y="30" href="assets/img/yo.svg"></image>
-        </svg>
+          </defs> -->
+          <!-- <image class="home_blob-img about-img" x="12" y="30" href="assets/img/Group 5.svg"></image>
+        </svg> -->
       </div>
 
-      <div class="about_data">
+      <div class="about_data container">
         <p class="about_description">
           Hello! I am Ruth Daniela Aguirre and I dance between the pages of literature and the lines of code.
           My background in the arts weaves my ability to communicate stories through code. Creating digital experiences
@@ -153,8 +153,8 @@
           <span class="about_info-title"></span>
         </div>
 
-        <div class="about_buttons">
-          <a download="#" href="#cv.pdf" class="button button--flex">
+        <div class="about_buttons container">
+          <a download="#" href="#" class="button button--flex">
             DOWNLOAD CV<i class="uil uil-download-alt button_icon"></i>
           </a>
         </div>
@@ -299,43 +299,70 @@
   <section class="projects section" id="projects">
     <h2 class="section_title">PROJECTS</h2>
 
-    <div class="projects_container container swiper-container">
+    <div class="projects_container container swiper-container"></div>
       <div class="swiper-wrapper">
 
-        <div class="projects_content swiper-slider">
-          <img src="assets/img/lings-cars.svg" alt="car renting image" class="projects_img">
-          <a href="#" class="button button--flex button--small project_button">
-            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i>
+        <div class="projects_content container grid swiper-slider">
+          <a href="#" target="blank"><img src="assets/img/lings-cars.svg" alt="car renting image" class="projects_img">
+          <!-- class="button button--flex button--small project_button">
+            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i> -->
           </a>
         </div>
 
-        <div class="projects_content swiper-slider">
-          <img src="assets/img/widerWorld.svg" alt="travel agency web" class="projects_img">
-          <a href="#" class="button button--flex button--small project_button">
-            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i>
+        <div class="projects_content container grid swiper-slider">
+          <a href="#" target="_blank"><img src="assets/img/widerWorld.svg" alt="travel agency web" class="projects_img">
+          <!-- class="button button--flex button--small project_button">
+            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i> -->
           </a>
         </div>
 
-        <div class="projects_content swiper-slider">
-          <img src="assets/img/TQD-SE.svg" alt="music school webpage" class="projects_img">
-          <a href="#" class="button button--flex button--small project_button">
-            REVIEW <i class="uil uil-arrow-circle-right button_icon"></i>
+        <div class="projects_content container grid swiper-slider">
+          <a href="#" target="_blank"><img src="assets/img/TQD-SE.svg" alt="music school webpage" class="projects_img">
+          <!-- <a href="#" class="button button--flex button--small project_button">
+            REVIEW <i class="uil uil-arrow-circle-right button_icon"></i> -->
           </a>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
 
       </div>
     </div>
 
   </section>
 
+
+<section class="contact section" id="contact">
+  <h2 class="section_title">CONTACT ME</h2>
+  <div class="contact_container container grid">
+
+    <div>
+      <div class="contact_information">
+        <i class="uil uil-envelope-alt icon"></i>
+        <div>
+        <h3 class="contact_title">EMAIL</h3>
+        <span class="contact_subtitle">ruthdanielaaguirre@gmail.com</span>
+      </div>
+      </div>
+    </div>
+
+    
+    <div>
+      <div class="contact_information">
+        <i class="uil uil-map-marker icon"></i>
+          <div>
+            <h3 class="contact_title">LOCATION</h3>
+            <span class="contact_subtitle">BARCELONA, BARCELONA.</span>
+          </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
 </body>
 
-<script src="node_modules/animejs/lib/anime.min.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
+
 <script src="assets/js/script.js"></script>
 
 </html>

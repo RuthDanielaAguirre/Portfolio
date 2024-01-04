@@ -1,3 +1,13 @@
+let rotationImg=document.getElementsByClassName('home_img');
+let rotation = 0;
+
+setInterval(function(){
+rotation += 360;
+for  (let i=0; i<rotationImg.length; i++){
+    rotationImg[i].style.transform="rotate("+ rotation +"deg)";
+}
+},5000);
+
 //const button = document.querySelector('.button')
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById("nav-toggle"),
@@ -42,36 +52,24 @@ const skillsContent = document.getElementsByClassName('skills_content'),
         }
     }
 
-    /********swiper************ */
-    let sliderInner=document.querySelector('.swiper-wrapper');
-    let images = sliderInner.querySelectorAll('img');
-    let index = 0;
+    // /********swiper auto************ */
+    // let sliderInner=document.querySelector('.swiper-wrapper');
+    // let images = sliderInner.querySelectorAll('img');
+    // let index = -3;
 
-    setInterval(function(){
-        let percentage = index * -34;
-        sliderInner.style.transform="translateX("+ percentage +"%)";
-        if(index > (images.length +1 )){
-            index = -1;
-        }
-        index++;
-    },3000);
+    // setInterval(function(){
+    //     let percentage = index * -33.5;
+    //     sliderInner.style.transform="translateX("+ percentage +"%)";
+    //     if(index > (images.length)){
+    //         index = -2;
+    //     }
+    //     index++;
+    // },1500);
 
 
     
 
-    //noestoysegura 
-    //let swiper = new Swiper(".projects_container", {
-    //     cssMode: true,
-    //     navigation: {
-    //       nextEl: ".swiper-button-next",
-    //       prevEl: ".swiper-button-prev",
-    //     },
-    //     pagination: {
-    //       el: ".swiper-pagination",
-    //     },
-    //     mousewheel: true,
-    //     keyboard: true,
-    //   });
+
 
 
     /**********esto fue barra de navegacion */

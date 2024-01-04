@@ -129,7 +129,10 @@ img {
 
 .grid {
     display: grid;
+    grid-template-columns: max-content;
     gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
@@ -188,7 +191,7 @@ img {
     }
 
     .list_1{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
     .nav_link {
@@ -242,6 +245,16 @@ img {
     grid-template-columns: max-content;
     row-gap: 1rem;
 }
+
+.home_img{
+    width:30rem;
+    transition:all 1s ease-in-out;
+    margin-bottom:5rem;
+}
+/* .home_img:hover{
+        width: 30rem;
+        animation: girar 2s linear infinite;
+} */
 
 .icon{
     font-size: 1.25rem;
@@ -316,12 +329,22 @@ background-color: var(--first-color-alt);
 
 
 /************ABOUT*************/
-.about_img{
+.about-img{
     width: 12.5rem;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
 }
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .about_description{
     text-align: center;
@@ -371,6 +394,7 @@ background-color: var(--first-color-alt);
 }
 
 .skills_list{
+    margin-top: 3rem;
     height: max-content;
     margin-bottom: var(--mb-2-5);
 }
@@ -382,7 +406,7 @@ background-color: var(--first-color-alt);
 .swiper-wrapper{
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-flow: column;
     flex-wrap: nowrap;
     transition:all .9s ease-in;
 }
@@ -392,9 +416,15 @@ background-color: var(--first-color-alt);
 }
 
 .projects_img{
-    width: 25rem;
-    border-radius: .5rem;
+    
+    overflow: hidden;
+    height: 10 25rem;
+    width:30rem;
     justify-self: center;
+}
+
+.projects_img:hover{
+    transform:scale(1.2);
 }
 
 .project_button{
@@ -402,5 +432,9 @@ background-color: var(--first-color-alt);
 align-self: center;
 justify-self:center;
 }
+
+
+/*******contact********/
+
 
 
