@@ -416,7 +416,8 @@ background-color: var(--first-color-alt);
 }
 
 .projects_img{
-    
+    margin-top: var(--mb-2);
+    box-shadow: 5px 5px 10px var(--first-color);
     overflow: hidden;
     height: 10 25rem;
     width:30rem;
@@ -435,6 +436,26 @@ justify-self:center;
 
 
 /*******contact********/
+.contact_container{
+    row-gap: 3rem;
+}
+
+.contact_information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact_content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
 
 
 
