@@ -58,13 +58,15 @@ const skillsContent = document.getElementsByClassName('skills_content'),
     // let index = -3;
 
     // setInterval(function(){
-    //     let percentage = index * -33.5;
+    //     let percentage = index * -32;
     //     sliderInner.style.transform="translateX("+ percentage +"%)";
     //     if(index > (images.length)){
     //         index = -2;
     //     }
     //     index++;
     // },1500);
+
+    
 
 
     
