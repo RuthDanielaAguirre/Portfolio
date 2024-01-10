@@ -908,10 +908,16 @@ img {
     .icon {
         font-size: 3rem;}
 
-    .home_title, .skills_title, .contact_title, .section_title, .about_info-title{
+    .home_title, .skills_title, .section_title, .about_info-title{
     font-size: 2.5vw;
     }
     
+    .contact_title{
+        font-size: 1.5vw;
+    }
+    .contact_subtitle{
+        font-size: 1.3vw;
+    }
 
     .header,
     .main,
