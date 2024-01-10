@@ -661,20 +661,14 @@ img {
 @media screen and (min-width:568px) {
 
 
-    .about_data {
-        flex-wrap: wrap;
-        width: fit-content;
-
+   
+    .about_content {
+        font-size: 2vw;
+        width: 30rem;
     }
 
 
-    .about-img,
-    .about_description {
-        grid-template-columns: repeat(1fr, 1fr);
-    }
-
-
-    
+   
     .home_img {
         width: 15rem;
         justify-self: center;
