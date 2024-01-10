@@ -1,17 +1,17 @@
-let rotationImg=document.getElementsByClassName('home_img');
-let rotation = 0;
+// let rotationImg=document.getElementsByClassName('home_img');
+// let rotation = 0;
 
-setInterval(function(){
-rotation += 360;
-for  (let i=0; i<rotationImg.length; i++){
-    rotationImg[i].style.transform="rotate("+ rotation +"deg)";
-}
-},5000);
+// setInterval(function(){
+// rotation += 360;
+// for  (let i=0; i<rotationImg.length; i++){
+//     rotationImg[i].style.transform="rotate("+ rotation +"deg)";
+// }
+// },5000);
 
-//const button = document.querySelector('.button')
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById("nav-toggle"),
-      navClose = document.getElementById('nav-close')
+    const button = document.querySelector('.button')
+    const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById("nav-toggle"),
+    navClose = document.getElementById('nav-close')
 /*show*/
 if(navToggle) {
     navToggle.addEventListener('click', () => {
@@ -39,7 +39,7 @@ navlink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*************skills***************/
-const skillsContent = document.getElementsByClassName('skills_content'),
+/*const skillsContent = document.getElementsByClassName('skills_content'),
     skillsHeader = document.querySelectorAll('.skills_header')
 
     function toggleSkills (){
