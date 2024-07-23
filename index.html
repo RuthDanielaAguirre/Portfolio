@@ -121,7 +121,7 @@
 
   <main class="main">
     <section class="home section" id="home">
-      <div class="home_container container grid">
+      <div class="home_container container ">
         <div class="home_content grid">
 
           <div class="home_social">
@@ -343,30 +343,31 @@
   <section class="projects section" id="projects">
     <h2 class="section_title">PROJECTS</h2>
 
-    <div class="projects_container container swiper-container"></div>
-      <div class="swiper-wrapper grid">
+    <div class="container">
+      <ul class="slider">
+          <li id="slide1">
+              <img src="assets/img/lings-cars.svg"/>
+          </li>
+          <li id="slide2">
+              <img src="assets/img/widerWorld.svg"/>
+          </li>
+          <li id="slide3">
+              <img src="assets/img/TQD-SE.svg"/>
+          </li>
+      </ul>
+  </div>
 
-        <div class="projects_content container grid swiper-slider">
-          <a href="#" target="blank"><img src="assets/img/lings-cars.svg" alt="car renting image" class="projects_img">
-          <!-- class="button button--flex button--small project_button">
-            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i> -->
-          </a>
-        </div>
-
-        <div class="projects_content container grid swiper-slider">
-          <a href="#" target="_blank"><img src="assets/img/widerWorld.svg" alt="travel agency web" class="projects_img">
-          <!-- class="button button--flex button--small project_button">
-            REVIEW<i class="uil uil-arrow-circle-right button_icon"></i> -->
-          </a>
-        </div>
-
-        <div class="projects_content container grid swiper-slider">
-          <a href="#" target="_blank"><img src="assets/img/TQD-SE.svg" alt="music school webpage" class="projects_img">
-          <!-- <a href="#" class="button button--flex button--small project_button">
-            REVIEW <i class="uil uil-arrow-circle-right button_icon"></i> -->
-          </a>
-        </div>
-
+<ul class="menu">
+  <li>
+      <a href="#slide1">1</a>
+  </li>
+  <li>
+      <a href="#slide2">2</a>
+  </li>
+  <li>
+      <a href="#slide3">3</a>
+  </li>
+</ul>
       </div>
     </div>
 

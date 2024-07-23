@@ -175,11 +175,11 @@ img {
 
 /*layout*/
 
-.container {
+/* .container {
     max-width: 100rem;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
-}
+} */
 
 .grid {
     display: grid;
@@ -515,7 +515,7 @@ img {
     transition:all .9s ease-in;} */
 
 
-.projects_content {
+/* .projects_content {
 
     padding: .25rem;
 }
@@ -537,29 +537,110 @@ img {
     display: flex;
     align-self: center;
     justify-self: center;
+} */
+.container{
+    padding-top: 1.25rem;
+    width: 80%;
+    height: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+ul, li{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    
+}
+
+ul.slider li{
+    position:absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: hsla(39, 93%, 59%, 0.983);
+    border-radius: 32px;
+    padding: 5px;
+    transition: opacity .5s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 80%;   
+    border-radius: 1rem;
+    padding-top: 1.25rem;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 1.25rem;
+}
+
+.menu li{
+    display: inline-flex;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: hsla(39, 100%, 50%, 0.734);
+    border-radius: 100%;   
+}
+
+.menu li a{
+    font-size: 1.25em;
+    text-decoration: none;
+    color: hsla(39, 100%, 50%, 0.058);
+    justify-self: center;
+    align-items: center;
+    
+}
 
 
 /*******contact********/
 .contact_container {
+   display: flex;
     row-gap: 3rem;
 }
 
 .contact_information {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: var(--mb-2);
+    
 }
 
 .contact_title {
+    
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+    
 }
 
 .contact_content {
     background-color: var(--input-color);
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
+    
 }
 
 .contact_label {
@@ -1016,7 +1097,7 @@ img {
     }
 
     .footer_links {
-        flex-direction: row;
+        display: inline-flex;
         column-gap: 2rem;
     }
 }
