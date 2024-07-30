@@ -741,7 +741,10 @@ ul.slider li:target{
 
 @media screen and (min-width:568px) {
 
-
+    .home_data{
+        display: flex;
+        flex-flow: column;
+    }
    
     .about_content {
         font-size: 2vw;
